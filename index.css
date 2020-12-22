@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: silver;
+}
+.header__text {
+    text-align: right;
+    margin-right: 3rem;
+}
+
+.form--div{
+  display: inline-block;
+}
+
+
+.main {
+    display: inline-block;
+}
+
+.main__add {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.main__add--text {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.main__add--button {
+    display: inline-block;
+    background-color: white;
+    border: none;
+    margin-left: 1rem;
+}
+.fa-plus {
+    font-size: 2rem;
+}
+
+.main__input {
+    display: inline-block;
+}
+
+.main__input--time--start{
+    display: inline-block;
+    border: 0px;
+    border-bottom: 2px solid purple;
+    margin-left: 2rem;
+    text-align: right;  
+}
+
+.main__input--time--end{
+    display: inline-block;  
+    border: 0px;
+    border-bottom: 2px solid purple;
+    margin-left: 2rem;
+    text-align: right; 
+}
+
+#form--div {
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+.div--form {
+  position: relative;
+  margin-top: 2rem;
+}
+.row {
+  position: relative;
+  margin-top: 2rem;
+}
+
+
+
+
+
+.main__checkbox {
+    display: inline-block;
+    margin-left: 2rem;
+}
+.main__checkbox--label {
+  display: inline-block;
+  position: relative;
+  padding-left: 3rem;
+  padding-bottom: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.main__checkbox--label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid purple;
+  background-color:white;
+}
+
+/* On mouse-over, add a grey background color */
+.main__checkbox--label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.main__checkbox--label input:checked ~ .checkmark {
+  background-color:purple;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.main__checkbox--label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.main__checkbox--label .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.day {
+    position: absolute;
+    margin-top: -1.5rem;
+    font-size: 1rem;
+}
+.error--massage {
+  display: none;
+  position: absolute;
+  margin-top: 1.5rem;
+  margin-left: 8rem;
+  color: red;
+}
+.show--massage {
+  display: inline-block;
+  position: absolute;
+  margin-top: 1.5rem;
+  margin-left: 8rem;
+  color: red;
+}
+.submit {
+  display: inline-block;
+  position: absolute;
+  
+  margin-top: 2rem;
+  background-color: purple;
+  color: white;
+  padding: 15px;
+  border-radius: 100%;
+}
